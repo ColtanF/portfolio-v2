@@ -1,6 +1,6 @@
 import React from "react";
 import projectInfo from "./data/projectInfo";
-import { Dimmer, Image, Header, Button } from "semantic-ui-react";
+import { Dimmer, Image, Button } from "semantic-ui-react";
 
 const Projects = () => {
   return (
@@ -15,14 +15,14 @@ const Projects = () => {
   );
 };
 
-const Project = ({ project, key }) => {
+const Project = ({ project }) => {
   const { name, info, image, codeUrl, projectUrl } = project;
   const [active, setActive] = React.useState(false);
 
   const content = (
-    <div class="ui transition">
-      <div class="content">
-        <div class="center">
+    <div className="ui transition">
+      <div className="content">
+        <div className="center">
           <a href={codeUrl}>
             <Button inverted>Learn More</Button>
           </a>
@@ -32,7 +32,7 @@ const Project = ({ project, key }) => {
   );
 
   return (
-    <div className="ui special raised card" key={key}>
+    <div className="ui special raised card">
       <Dimmer.Dimmable
         as={Image}
         blurring
@@ -52,6 +52,7 @@ const Project = ({ project, key }) => {
         <a
           href={codeUrl.length > 0 ? codeUrl : "#"}
           target="_blank"
+          rel="noreferrer"
           className={codeUrl.length > 0 ? "ui button" : "ui button disabled"}
         >
           Code
@@ -59,6 +60,7 @@ const Project = ({ project, key }) => {
         <a
           href={projectUrl.length > 0 ? projectUrl : "#"}
           target="_blank"
+          rel="noreferrer"
           className={projectUrl.length > 0 ? "ui button" : "ui button disabled"}
         >
           Live Site
