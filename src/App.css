@@ -32,3 +32,7 @@ strong {
 .cards .card {
   padding: 8em;
 }
+
+.ui.grid.exp-holder {
+  padding: 1em 0;
+}
