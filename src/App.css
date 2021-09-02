@@ -36,3 +36,12 @@ strong {
 .ui.grid.exp-holder {
   padding: 1em 0;
 }
+
+.column.link {
+  font-size: 1.2em;
+}
+
+.link a:hover {
+  color: black;
+  text-decoration: underline;
+}
