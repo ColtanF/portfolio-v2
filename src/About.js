@@ -18,7 +18,7 @@ const About = () => {
               return <p key={index}>{item}</p>;
             })}
           </div>
-          <div className="six wide column">
+          <div className="eight wide column">
             <strong>Technical strengths:</strong>
             <TechSkills />
             <p>

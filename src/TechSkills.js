@@ -24,61 +24,25 @@ import {
 const TechSkills = () => {
   const iconSize = 40;
   return (
-    <div className="ui stackable grid exp-holder">
-      <div className="two wide column">
-        <SiCplusplus size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiPython size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiJava size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiJavascript size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiFlask size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiReact size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiCsharp size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiPowershell size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiGit size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiSubversion size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiVmware size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiVisualstudio size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiMysql size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiPostgresql size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiLinux size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiWindows size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiHeroku size={iconSize} />
-      </div>
-      <div className="two wide column">
-        <SiNetlify size={iconSize} />
-      </div>
+    <div className="column icon-container">
+      <SiCplusplus size={iconSize} className="icon" />
+      <SiPython size={iconSize} className="icon" />
+      <SiJava size={iconSize} className="icon" />
+      <SiJavascript size={iconSize} className="icon" />
+      <SiFlask size={iconSize} className="icon" />
+      <SiReact size={iconSize} className="icon" />
+      <SiCsharp size={iconSize} className="icon" />
+      <SiPowershell size={iconSize} className="icon" />
+      <SiGit size={iconSize} className="icon" />
+      <SiSubversion size={iconSize} className="icon" />
+      <SiVmware size={iconSize} className="icon" />
+      <SiVisualstudio size={iconSize} className="icon" />
+      <SiMysql size={iconSize} className="icon" />
+      <SiPostgresql size={iconSize} className="icon" />
+      <SiLinux size={iconSize} className="icon" />
+      <SiWindows size={iconSize} className="icon" />
+      <SiHeroku size={iconSize} className="icon" />
+      <SiNetlify size={iconSize} className="icon" />
     </div>
   );
 };
